@@ -8,7 +8,7 @@ Respects IBInspectable / IBDesignable options. Inspired by https://github.com/ko
 [![License](https://img.shields.io/cocoapods/l/RMNibLoadedView.svg?style=flat)](http://cocoapods.org/pods/RMNibLoadedView)
 [![Platform](https://img.shields.io/cocoapods/p/RMNibLoadedView.svg?style=flat)](http://cocoapods.org/pods/RMNibLoadedView)
 
-![Alt Text](https://github.com/byzyn4ik/RMNibLoadedView/GIFs/demo.gif)
+![Alt Text](https://github.com/byzyn4ik/RMNibLoadedView/raw/master/GIFs/demo.gif)
 
 
 ## Example
