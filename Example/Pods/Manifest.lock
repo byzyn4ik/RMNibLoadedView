@@ -1,5 +1,5 @@
 PODS:
-  - RMNibLoadedView (0.1.0)
+  - RMNibLoadedView (1.0)
 
 DEPENDENCIES:
   - RMNibLoadedView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RMNibLoadedView: 36d583a8fee52f8f889fbcf3a8238ec57bdf9470
+  RMNibLoadedView: a46181908c739d51ce3fad762227d1383d008e38
 
 PODFILE CHECKSUM: 45ee820987b29fd1755600039704275fb796cb84
 

@@ -89,23 +89,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>112C7921E3A497328D11F4930CBBC9CA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3997E5D2953ECDF377B85B234FDF550D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>160B02F4B6F0DDB8405616EDC091B86E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3997E5D2953ECDF377B85B234FDF550D</string>
+			<string>D635D41133915B228CE899EF89DD95CE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -356,19 +343,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>3997E5D2953ECDF377B85B234FDF550D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
 		<key>3C393E60FBC1FECA158F2465EB26709F</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -400,6 +374,26 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>419125916F0AE3EFBDB64F9E61150013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D635D41133915B228CE899EF89DD95CE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>433CD3331B6C3787F473C941B61FC68F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E294F3BD993E240DCFCB4DC1329C9F36</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -784,7 +778,7 @@
 			<key>buildPhases</key>
 			<array>
 				<string>90CDF21E95D39F3BB076C11AC4B4BD26</string>
-				<string>DFE90032DE48461B3787DF218A32140F</string>
+				<string>9E7D9E0286E3F06E7A4D8AE4DA477C39</string>
 				<string>961E3A4F9A76EEDB39EF27C8C2A70670</string>
 			</array>
 			<key>buildRules</key>
@@ -848,7 +842,7 @@
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>404853EE0D1EBF226C50B899A1FCD8DA</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>433CD3331B6C3787F473C941B61FC68F</string>
 				<string>D58C59EE893F0450406F84C42134E1B7</string>
 				<string>D85D26CDE381E842195DC769A33A7A47</string>
 			</array>
@@ -869,13 +863,6 @@
 			<string>Pods-RMNibLoadedView_Example-resources.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>828F5BA68E05B913D22FF404EA1F78DC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3997E5D2953ECDF377B85B234FDF550D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>88AA9E89EE0970892411F86245E24DAA</key>
 		<dict>
@@ -1002,6 +989,20 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>9E7D9E0286E3F06E7A4D8AE4DA477C39</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>419125916F0AE3EFBDB64F9E61150013</string>
+				<string>BDE0B7DDADD8B6E5D1732AC85632931C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>A0F019C8E94F868886BD97C829756C9A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1114,6 +1115,19 @@
 			<string>Pods-RMNibLoadedView_Tests-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AF066F8D85A4D7A3B3A04D25E4D2AC88</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>B1EC9E6E0C587ECFB2EBE1D1FC435091</key>
 		<dict>
@@ -1260,18 +1274,12 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<key>BDE0B7DDADD8B6E5D1732AC85632931C</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>112C7921E3A497328D11F4930CBBC9CA</string>
-			</array>
+			<key>fileRef</key>
+			<string>AF066F8D85A4D7A3B3A04D25E4D2AC88</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>C1344E409E2331AA27749D1FFFAC2641</key>
 		<dict>
@@ -1415,6 +1423,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>D635D41133915B228CE899EF89DD95CE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
 		<key>D7046A65E84B520523E5EDDD44737D98</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -1511,19 +1532,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>DFE90032DE48461B3787DF218A32140F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>828F5BA68E05B913D22FF404EA1F78DC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>E1A9644B0268EE3C11D2D8B9FE7FE93B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1534,6 +1542,20 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>RMNibLoadedView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E294F3BD993E240DCFCB4DC1329C9F36</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D635D41133915B228CE899EF89DD95CE</string>
+				<string>AF066F8D85A4D7A3B3A04D25E4D2AC88</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1593,7 +1615,7 @@
 		<key>F155FD945F4E886E03BCA5218E034605</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3997E5D2953ECDF377B85B234FDF550D</string>
+			<string>D635D41133915B228CE899EF89DD95CE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
