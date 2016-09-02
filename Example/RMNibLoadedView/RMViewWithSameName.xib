@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RMViewWithSameName"/>
@@ -21,24 +20,11 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="H7X-eE-tG7">
-                    <rect key="frame" x="8" y="105" width="184" height="29"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="28" id="qpQ-zt-vHv"/>
-                    </constraints>
-                    <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
-                    </segments>
-                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="H7X-eE-tG7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="3Zk-2c-9LT"/>
-                <constraint firstItem="0Q9-iR-sZg" firstAttribute="top" secondItem="H7X-eE-tG7" secondAttribute="bottom" id="53s-iq-bxh"/>
                 <constraint firstItem="0Q9-iR-sZg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9cW-u6-Usq"/>
                 <constraint firstAttribute="bottom" secondItem="0Q9-iR-sZg" secondAttribute="bottom" id="JSd-zx-vd3"/>
-                <constraint firstAttribute="trailingMargin" secondItem="H7X-eE-tG7" secondAttribute="trailing" id="dTM-ee-qn4"/>
                 <constraint firstAttribute="trailing" secondItem="0Q9-iR-sZg" secondAttribute="trailing" id="vqT-5Q-X5r"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

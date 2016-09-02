@@ -36,10 +36,13 @@
 
 - (void)prepareForInterfaceBuilder {
    [super prepareForInterfaceBuilder];
+   self.changed = YES;
    [self reloadNibView];
 }
 
 - (void)awakeFromNib {
+   [super awakeFromNib];
+   self.changed = YES;
    [self reloadNibView];
 }
 
