@@ -10,6 +10,10 @@
 
 @interface RMCachingNibLoader : NSObject
 
-+ (UIView*)loadViewFromNibNamed:(NSString*)nibName inBundle:(NSBundle*)bundle atIndex:(NSInteger)index options:(NSDictionary*)options loaderView:(UIView*)loaderView;
++ (UIView *)loadViewFromNibNamed:(NSString *)nibName
+                        inBundle:(NSBundle *)bundle
+                         atIndex:(NSInteger)index
+                         options:(NSDictionary *)options
+                      loaderView:(UIView *)loaderView;
 
 @end

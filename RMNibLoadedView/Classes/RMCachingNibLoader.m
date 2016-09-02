@@ -11,9 +11,7 @@
 
 @implementation RMCachingNibLoader
 
-
-+ (NSMutableDictionary <NSString*,RMNibLoader*> *)nibLoaderCache
-{
++ (NSMutableDictionary<NSString *, RMNibLoader *> *)nibLoaderCache {
    static dispatch_once_t onceToken;
    static NSMutableDictionary *nibLoaderCache;
    dispatch_once(&onceToken, ^{
@@ -22,7 +20,9 @@
    return nibLoaderCache;
 }
 
-+ (RMNibLoader*)loaderForNibNamed:(NSString *)nibName orClass:(Class)cls inBundle:(NSBundle *)nibBundle {
++ (RMNibLoader *)loaderForNibNamed:(NSString *)nibName
+                           orClass:(Class)cls
+                          inBundle:(NSBundle *)nibBundle {
    NSParameterAssert(nibName != nil || cls != nil);
    NSParameterAssert(nibBundle != nil);
    if (!nibName) {
@@ -36,9 +36,17 @@
    return loader;
 }
 
-+ (UIView*)loadViewFromNibNamed:(NSString*)nibName inBundle:(NSBundle*)bundle atIndex:(NSInteger)index options:(NSDictionary*)options loaderView:(UIView*)loaderView {
-   RMNibLoader *loader = [self loaderForNibNamed:nibName orClass:[loaderView class] inBundle:bundle];
-   UIView *nibView =  [loader loadContentFromNibWithOwner:loaderView contentViewIndex:index options:options];
++ (UIView *)loadViewFromNibNamed:(NSString *)nibName
+                        inBundle:(NSBundle *)bundle
+                         atIndex:(NSInteger)index
+                         options:(NSDictionary *)options
+                      loaderView:(UIView *)loaderView {
+   RMNibLoader *loader = [self loaderForNibNamed:nibName
+                                         orClass:[loaderView class]
+                                        inBundle:bundle];
+   UIView *nibView = [loader loadContentFromNibWithOwner:loaderView
+                                        contentViewIndex:index
+                                                 options:options];
    return nibView;
 }
 

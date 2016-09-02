@@ -34,7 +34,6 @@
    return self;
 }
 
-
 - (void)prepareForInterfaceBuilder {
    [super prepareForInterfaceBuilder];
    [self reloadNibView];
@@ -89,7 +88,6 @@
       self.nibView = nibView;
       self.changed = NO;
    }
-
 }
 
 @end

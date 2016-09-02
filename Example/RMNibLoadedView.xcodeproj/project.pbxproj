@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04F39A747CA82B2C55DC88CF /* Pods_RMNibLoadedView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5308F71679C3224AD0B220 /* Pods_RMNibLoadedView_Tests.framework */; };
+		4DA5E7AA1D7987B800BD3C91 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5E7A91D7987B800BD3C91 /* Launch Screen.storyboard */; };
 		4DAA014D1D7961F0003085FA /* RMViewWithSameName.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA014C1D7961F0003085FA /* RMViewWithSameName.m */; };
 		4DAA014F1D796204003085FA /* RMViewWithSameName.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA014E1D796204003085FA /* RMViewWithSameName.xib */; };
 		4DAA01521D796804003085FA /* RMCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA01511D796804003085FA /* RMCustomView.m */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		094D9E3CB1CF7A7FAC05F4A3 /* Pods_RMNibLoadedView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMNibLoadedView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1723C3E277E4FDD36D09D23F /* Pods-RMNibLoadedView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMNibLoadedView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RMNibLoadedView_Example/Pods-RMNibLoadedView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4DA5E7A91D7987B800BD3C91 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4DAA014B1D7961F0003085FA /* RMViewWithSameName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMViewWithSameName.h; sourceTree = "<group>"; };
 		4DAA014C1D7961F0003085FA /* RMViewWithSameName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMViewWithSameName.m; sourceTree = "<group>"; };
 		4DAA014E1D796204003085FA /* RMViewWithSameName.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMViewWithSameName.xib; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				6003F59C195388D20070C39A /* RMAppDelegate.h */,
 				6003F59D195388D20070C39A /* RMAppDelegate.m */,
+				4DA5E7A91D7987B800BD3C91 /* Launch Screen.storyboard */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				4DAA014B1D7961F0003085FA /* RMViewWithSameName.h */,
 				4DAA014C1D7961F0003085FA /* RMViewWithSameName.m */,
@@ -301,6 +304,7 @@
 				4DAA01561D79683D003085FA /* RMCustomView2.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				4DA5E7AA1D7987B800BD3C91 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,10 +10,13 @@
 
 @interface RMNibLoader : NSObject
 
-@property (nonatomic, readonly) NSString *nibName;
-@property (nonatomic, readonly) NSBundle *nibBundle;
+@property(nonatomic, readonly) NSString *nibName;
+@property(nonatomic, readonly) NSBundle *nibBundle;
 
-- (instancetype)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle;
-- (UIView *)loadContentFromNibWithOwner:(id)owner contentViewIndex:(NSUInteger)contentViewIndex options:(NSDictionary *)options;
+- (instancetype)initWithNibName:(NSString *)nibName
+                         bundle:(NSBundle *)nibBundle;
+- (UIView *)loadContentFromNibWithOwner:(id)owner
+                       contentViewIndex:(NSUInteger)contentViewIndex
+                                options:(NSDictionary *)options;
 
 @end
