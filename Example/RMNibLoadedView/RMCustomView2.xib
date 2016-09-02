@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RMCustomView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXs-cL-l5G">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.99345999959999998" green="0.67859059570000002" blue="0.035436578089999997" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iXs-cL-l5G" secondAttribute="trailing" id="Ej8-Nc-Iy7"/>
+                <constraint firstItem="iXs-cL-l5G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HW8-9E-mkO"/>
+                <constraint firstAttribute="bottom" secondItem="iXs-cL-l5G" secondAttribute="bottom" id="MYe-Nk-cJd"/>
+                <constraint firstItem="iXs-cL-l5G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gro-SC-c3G"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

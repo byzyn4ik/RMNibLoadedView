@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="RMViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppu-jQ-PXd" customClass="RMViewWithSameName">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Geh-Mu-w2p" customClass="RMCustomView">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="RMCustomView1"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="nibViewIndex">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-hB-ul6" customClass="RMCustomView">
+                                <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="RMCustomView2"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gw7-hB-ul6" firstAttribute="height" secondItem="ppu-jQ-PXd" secondAttribute="height" id="1HR-kg-sA7"/>
+                            <constraint firstItem="Geh-Mu-w2p" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="E5g-Ec-ZJA"/>
+                            <constraint firstAttribute="trailing" secondItem="Geh-Mu-w2p" secondAttribute="trailing" id="EPm-xo-cpq"/>
+                            <constraint firstAttribute="trailing" secondItem="gw7-hB-ul6" secondAttribute="trailing" id="EkE-rq-h6f"/>
+                            <constraint firstItem="Geh-Mu-w2p" firstAttribute="top" secondItem="gw7-hB-ul6" secondAttribute="bottom" id="Xtu-Uv-hp2"/>
+                            <constraint firstItem="gw7-hB-ul6" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="e3a-u0-AbC"/>
+                            <constraint firstItem="Geh-Mu-w2p" firstAttribute="height" secondItem="ppu-jQ-PXd" secondAttribute="height" id="eVB-Ve-n7u"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="Geh-Mu-w2p" secondAttribute="bottom" id="lj2-nq-jrc"/>
+                            <constraint firstAttribute="trailing" secondItem="ppu-jQ-PXd" secondAttribute="trailing" id="ndC-w1-el2"/>
+                            <constraint firstItem="ppu-jQ-PXd" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="top" id="pUc-IW-9fY"/>
+                            <constraint firstItem="gw7-hB-ul6" firstAttribute="top" secondItem="ppu-jQ-PXd" secondAttribute="bottom" id="wY7-G3-VYM"/>
+                            <constraint firstItem="ppu-jQ-PXd" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="ywb-lO-J5e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="173"/>
+        </scene>
+    </scenes>
+</document>

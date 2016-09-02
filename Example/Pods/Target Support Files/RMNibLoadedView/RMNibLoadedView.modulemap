@@ -1,0 +1,6 @@
+framework module RMNibLoadedView {
+  umbrella header "RMNibLoadedView-umbrella.h"
+
+  export *
+  module * { export * }
+}

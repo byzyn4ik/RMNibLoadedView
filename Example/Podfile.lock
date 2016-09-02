@@ -1,0 +1,16 @@
+PODS:
+  - RMNibLoadedView (0.1.0)
+
+DEPENDENCIES:
+  - RMNibLoadedView (from `../`)
+
+EXTERNAL SOURCES:
+  RMNibLoadedView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RMNibLoadedView: 36d583a8fee52f8f889fbcf3a8238ec57bdf9470
+
+PODFILE CHECKSUM: 45ee820987b29fd1755600039704275fb796cb84
+
+COCOAPODS: 1.0.0.beta.3

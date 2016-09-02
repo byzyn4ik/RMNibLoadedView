@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RMNibLoadedView_Example' do
+  pod 'RMNibLoadedView', :path => '../'
+
+  target 'RMNibLoadedView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
