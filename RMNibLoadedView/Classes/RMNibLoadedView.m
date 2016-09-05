@@ -12,7 +12,7 @@
 @interface RMNibLoadedView ()
 
 @property(nonatomic, weak) UIView *nibView;
-@property(nonatomic) BOOL changed;
+@property(nonatomic) BOOL needReload;
 
 @end
 
@@ -21,13 +21,21 @@
 - (instancetype)initWithFrame:(CGRect)frame reloadingFromNib:(BOOL)reloadingFromNib {
     self = [super initWithFrame:frame];
     if (self && reloadingFromNib) {
+        self.needReload = reloadingFromNib;
         [self reloadNibView];
     }
     return self;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    return [self initWithFrame:frame reloadingFromNib:YES];
+    
+#if !TARGET_INTERFACE_BUILDER
+    BOOL reloadFromNib = YES;
+#elif 
+    BOOL reloadFromNib = NO;
+
+#endif
+    return [self initWithFrame:frame reloadingFromNib: reloadFromNib];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -48,13 +56,13 @@
 
 - (void)prepareForInterfaceBuilder {
    [super prepareForInterfaceBuilder];
-   self.changed = YES;
+   self.needReload = YES;
    [self reloadNibView];
 }
 
 - (void)awakeFromNib {
    [super awakeFromNib];
-   self.changed = YES;
+   self.needReload = YES;
    [self reloadNibView];
 }
 
@@ -71,13 +79,13 @@
 
 - (void)setNibViewIndex:(NSInteger)nibViewIndex {
    _nibViewIndex = nibViewIndex;
-   self.changed = YES;
+   self.needReload = YES;
    [self reloadNibView];
 }
 
 - (void)setNibName:(NSString *)nibName {
    _nibName = nibName;
-   self.changed = YES;
+   self.needReload = YES;
    [self reloadNibView];
 }
 
@@ -89,7 +97,7 @@
 }
 
 - (void)reloadNibView {
-   if (self.changed) {
+   if (self.needReload) {
       UIView *nibView = [RMCachingNibLoader loadViewFromNibNamed:self.nibName
                                                         inBundle:self.nibBundle
                                                          atIndex:self.nibViewIndex
@@ -101,7 +109,7 @@
       (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
       [self addSubview:nibView];
       self.nibView = nibView;
-      self.changed = NO;
+      self.needReload = NO;
    }
 }
 
