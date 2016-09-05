@@ -29,7 +29,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     BOOL reloadFromNib = YES;
-#if !TARGET_INTERFACE_BUILDER
+#if TARGET_INTERFACE_BUILDER
     reloadFromNib = NO;
 #endif
     return [self initWithFrame:frame reloadingFromNib: reloadFromNib];
