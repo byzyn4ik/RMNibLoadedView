@@ -18,12 +18,24 @@
 
 @implementation RMNibLoadedView
 
+- (instancetype)initWithFrame:(CGRect)frame reloadingFromNib:(BOOL)reloadingFromNib {
+    self = [super initWithFrame:frame];
+    if (self && reloadingFromNib) {
+        [self reloadNibView];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    return [self initWithFrame:frame reloadingFromNib:YES];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
                       nibName:(NSString *)nibName
                  nibViewIndex:(NSInteger)nibViewIndex
                      inBundle:(NSBundle *)bundle
                       options:(NSDictionary *)options {
-   self = [self initWithFrame:frame];
+   self = [self initWithFrame:frame reloadingFromNib:NO];
    if (self) {
       self.nibName = nibName;
       self.nibViewIndex = nibViewIndex;
