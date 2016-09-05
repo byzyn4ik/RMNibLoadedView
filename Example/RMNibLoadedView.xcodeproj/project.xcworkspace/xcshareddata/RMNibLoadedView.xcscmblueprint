@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "531D8DB23A0AB64B8868329E211277A5EEF75B64",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "531D8DB23A0AB64B8868329E211277A5EEF75B64" : 0,
+    "AE274F393B7FCC6DF1E5C6B241D4E1BE90F824D8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D8B19AC1-E5C5-49AD-AB58-5DC278500307",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "531D8DB23A0AB64B8868329E211277A5EEF75B64" : "RMNibLoadedView\/",
+    "AE274F393B7FCC6DF1E5C6B241D4E1BE90F824D8" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RMNibLoadedView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/RMNibLoadedView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/byzyn4ik\/RMNibLoadedView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "531D8DB23A0AB64B8868329E211277A5EEF75B64"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "54.236.98.141:ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE274F393B7FCC6DF1E5C6B241D4E1BE90F824D8"
+    }
+  ]
+}

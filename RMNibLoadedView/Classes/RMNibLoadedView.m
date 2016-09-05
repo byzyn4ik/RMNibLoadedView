@@ -28,11 +28,16 @@
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    BOOL reloadFromNib = YES;
-#if TARGET_INTERFACE_BUILDER
-    reloadFromNib = NO;
-#endif
-    return [self initWithFrame:frame reloadingFromNib: reloadFromNib];
+    return [self initWithFrame:frame reloadingFromNib: YES];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.needReload = YES;
+        [self reloadNibView];
+    }
+    return self;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -46,6 +51,7 @@
       self.nibViewIndex = nibViewIndex;
       self.nibBundle = bundle;
       self.nibOptions = options;
+       self.needReload = YES;
       [self reloadNibView];
    }
    return self;
@@ -53,13 +59,11 @@
 
 - (void)prepareForInterfaceBuilder {
    [super prepareForInterfaceBuilder];
-   self.needReload = YES;
    [self reloadNibView];
 }
 
 - (void)awakeFromNib {
    [super awakeFromNib];
-   self.needReload = YES;
    [self reloadNibView];
 }
 
@@ -94,20 +98,23 @@
 }
 
 - (void)reloadNibView {
-   if (self.needReload) {
+   if (self.needReload || !self.nibView) {
       UIView *nibView = [RMCachingNibLoader loadViewFromNibNamed:self.nibName
                                                         inBundle:self.nibBundle
                                                          atIndex:self.nibViewIndex
                                                          options:self.nibOptions
                                                       loaderView:self];
-      nibView.frame = self.bounds;
-      nibView.translatesAutoresizingMaskIntoConstraints = YES;
-      nibView.autoresizingMask =
-      (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-      [self addSubview:nibView];
-      self.nibView = nibView;
-      self.needReload = NO;
+       if (nibView) {
+           nibView.frame = self.bounds;
+           nibView.translatesAutoresizingMaskIntoConstraints = YES;
+           nibView.autoresizingMask =
+           (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+           [self insertSubview:nibView atIndex:0];
+           self.nibView = nibView;
+           self.needReload = NO;
+       }
    }
 }
+
 
 @end

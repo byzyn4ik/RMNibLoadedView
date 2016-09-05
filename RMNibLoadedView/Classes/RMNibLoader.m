@@ -30,15 +30,8 @@
 }
 
 - (UINib *)nib {
-   if (!_nib) {
+    if (!_nib && [self.nibBundle pathForResource:self.nibName ofType:@"nib"]) {
       _nib = [UINib nibWithNibName:self.nibName bundle:self.nibBundle];
-      if (!_nib) {
-         NSString *reason = [NSString
-                             stringWithFormat:@"Nib file '%@' could not be loaded", self.nibName];
-         @throw [NSException exceptionWithName:NSInvalidArgumentException
-                                        reason:reason
-                                      userInfo:nil];
-      }
    }
    return _nib;
 }
@@ -47,15 +40,9 @@
                        contentViewIndex:(NSUInteger)contentViewIndex
                                 options:(NSDictionary *)options {
    NSArray *objects = [self.nib instantiateWithOwner:owner options:options];
-
    if (objects.count <= contentViewIndex ||
        ![objects[contentViewIndex] isKindOfClass:[UIView class]]) {
-      NSString *reason = [NSString
-                          stringWithFormat:@"Object at index %ld does not exist or is not a view",
-                          (unsigned long)contentViewIndex];
-      @throw [NSException exceptionWithName:NSInvalidArgumentException
-                                     reason:reason
-                                   userInfo:nil];
+       return nil;
    }
    return objects[contentViewIndex];
 }
